@@ -1,0 +1,90 @@
+# ---- Rails ----
+/.bundle/
+/log/*
+/tmp/*
+/db/*.sqlite3
+/db/*.sqlite3-journal
+/db/*.sqlite3-shm
+/db/*.sqlite3-wal
+/public/assets
+/public/packs
+/public/packs-test
+/node_modules/
+/yarn-error.log
+.byebug_history
+
+# Keep empty dirs
+!/log/.keep
+!/tmp/.keep
+
+# ---- Credentials & Secrets ----
+config/master.key
+config/credentials/*.key
+config/credentials/*.enc
+
+# ---- Environment Files ----
+.env
+.env.local
+.env.*.local
+
+# Render environment files (generated during deploy)
+/.env.render
+.env.render.*
+
+# ---- OS & Editor Files ----
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# ---- Bundler ----
+/vendor/bundle/
+
+# ---- Coverage & Tests ----
+coverage/
+spec/examples.txt
+
+# ---- Rails Cache ----
+/tmp/cache/
+
+# ---- Assets (Legacy) ----
+/public/system
+/public/uploads
+
+# ---- Sprockets (if used) ----
+/app/assets/.sass-cache
+
+# ---- Webpacker or Vite (if used) ----
+/public/packs
+/public/packs-test
+/node_modules/
+
+# ---- Ruby ----
+*.rbc
+
+# ---- Render Specific ----
+
+# Render build artifacts
+/render-build/
+render.yaml.tmp
+
+# Render often writes build logs and metadata
+render-build.log
+render-output.log
+.render-build-cache/
+
+# Node/Yarn/PNPM caches used during Render build
+.pnpm-store/
+.npm/
+.yarn-cache/
+.yarn/*
+!.yarn/releases
+!.yarn/plugins
+!.yarn/sdks
+!.yarn/versions
+
+# Render temporary runtime output
+/tmp/render/
+
